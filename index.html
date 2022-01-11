@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>simple js project</title>
+</head>
+<body>
+
+    <div id="containerr" class="container d-flex mt-5">
+        
+        
+        <div  class="col-6  input-part me-3 mt-3">
+              <form id="allelement">
+                <div class="mb-3 row">
+                    
+                    <!-- <label for="staticEmail" class="col-sm-2 col-form-label">Name</label> -->
+                    <h6>Name</h6>
+                    <div class="col-sm-10">
+                        <input type="text"  class="form-control" id="inputName">
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="mb-3 row ">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="d-flex">
+
+                        <div id="duplicater" class="col-sm-10">
+                            <input type="email"  class="form-control" id="inputEmail">
+                                
+                        </div>
+
+                        <div>
+                            <button id="btn1"  type="button" class="btn btn-outline-success ms-2">+</button>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="mb-3 row">
+                <label  class="col-sm-2 col-form-label">Phone</label>
+                
+                <div class="d-flex">
+
+                    <div id="duplicater2" class="col-sm-10 ">
+                        <input type="number"  class="form-control" id="inputPhone">
+                        
+                    </div>
+
+                    <div>
+                        <button id="btn2" type="button" class="btn btn-outline-success ms-2">+</button>
+                    </div>
+
+                </div>
+            </div>
+            <button id="submitBtn" type="submit " class="btn btn-outline-success">Submit</button>
+         </form>
+        </div>
+
+        
+    
+        <div class="col-6  output-part">
+            <table class="table">
+                <thead>
+                  <tr>
+
+                    
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">AnotherEmail</th>
+                    <th scope="col">AnotherPhone</th>
+                    
+                    
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                    
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
